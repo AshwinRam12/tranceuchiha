@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        header
+        {
+            width: 100%;
+            height: 55px;
+            background-color: black;
+            padding-top: 3px;
+        }
+        .logo .lo
+        {
+            width: 120px;
+            float: left;
+            margin-top: 10px;
+        }
+       
+        nav .navi
+        {
+            padding-left: 30px;
+        }
+
+        nav ul
+        {
+            padding-top: 20px;
+            float: right;
+            margin-right: 60px;
+            margin-top: -10px;
+        }
+        nav ul li
+        {
+            display: inline;
+            margin-left: 55px;
+            
+        }
+        nav ul li a
+        {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Outfit', sans-serif;
+            transition: all;
+            transition-duration: 0.5s;
+        }
+        nav ul li a:hover
+        {
+            color: yellow;
+            font-size: 20px;
+        }
+
+       .banner
+       {
+           width: 100%;
+           height: 1000px;
+           background-color: black;
+       }
+       .btn
+       {
+        background-color: black;
+        position: relative;
+        padding: 20px 30px;
+        margin: 0 15px;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        overflow: hidden;
+        transition: 0.5s;
+        top: -350px;
+       }
+       .btn:hover
+       {
+           background: #6a0080;
+           color: rgb(255, 255, 255);
+           box-shadow: 0 0 50px #6a0080;
+           transition-delay: 0.5s;
+
+
+       }
+
+       .btn:before
+       {
+           content: '';
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 10px;
+           height: 10px;
+           border-top: 2px solid  #6a0080;
+           border-left: 2px solid #6a0080;
+           transition: 0.5s;
+       }
+       .btn:hover:before
+       {
+           width: 100%;
+           height: 100%;
+       }
+
+       .btn:after
+       {
+           content: '';
+           position: absolute;
+           bottom: 0;
+           right: 0;
+           width: 10px;
+           height: 10px;
+           border-bottom: 2px solid #6a0080;
+           border-right: 2px solid #6a0080;
+           transition: 0.5s;
+       }
+       .btn:hover:after
+       {
+           width: 100%;
+           height: 100%;
+       }
+
+       .main .banner
+       {
+            width: 100%;
+            height: 1000px;
+       }
+       .headdd
+       {
+           position: relative;
+           top: -625px;
+           font-family: 'Outfit', sans-serif;
+           margin-left: 30px;
+           color: rgb(78, 9, 110);
+       }
+       .sale
+       {
+           position: relative;
+           top: -650px;
+           font-family: 'Outfit', sans-serif;
+           margin-left: 30px;
+           color: rgb(252, 217, 65);
+           font-size: 60px;
+       }
+       .second
+       {
+           width: 100%;
+           height: 800px;
+           position: relative;
+           top: -260px;
+           background-image: url(images/pic1.jpg);
+           background-size:cover;
+           background-position: center;
+       }
+       .trending
+       {
+           position: relative;
+           top: -250px;
+           font-family: 'Outfit', sans-serif;
+           font-size: 30px; 
+           display:flex;
+           justify-content: center;
+       }
+       
+       .btn2
+       {
+        background-color: black;
+        position: relative;
+        padding: 20px 30px;
+        margin: 0 15px;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        overflow: hidden;
+        transition: 0.5s;
+        top: 700px;
+       }
+       .btn2:hover
+       {
+           background: #6a0080;
+           color: rgb(255, 255, 255);
+           box-shadow: 0 0 50px #6a0080;
+           transition-delay: 0.5s;
+
+
+       }
+
+       .btn2:before
+       {
+           content: '';
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 10px;
+           height: 10px;
+           border-top: 2px solid  #6a0080;
+           border-left: 2px solid #6a0080;
+           transition: 0.5s;
+       }
+       .btn2:hover:before
+       {
+           width: 100%;
+           height: 100%;
+       }
+
+       .btn2:after
+       {
+           content: '';
+           position: absolute;
+           bottom: 0;
+           right: 0;
+           width: 10px;
+           height: 10px;
+           border-bottom: 2px solid #6a0080;
+           border-right: 2px solid #6a0080;
+           transition: 0.5s;
+       }
+       .btn2:hover:after
+       {
+           width: 100%;
+           height: 100%;
+       }
+       
+       .trending
+       {    
+           padding-top: 20px;
+           font: 1em sans-serif;
+           font-size: 40px;
+           height: 40px;
+           color: white;
+       }
+       .banr 
+       {
+           width: 100%;
+           height:1100px;
+           background-color: black;
+           margin-top: -320px;
+           padding-top: 20px;
+       }
+       
+       .card {
+            width: 90%;  
+            display: grid;
+            grid-gap:30px;
+            margin-left: auto;
+            margin-right: auto;
+            grid-template-columns: auto auto auto auto;
+            background-position: center;
+        }
+        
+        
+       
+        .card1,
+        .card2,
+        .card3
+        {
+            margin-top: -950px;
+            color: white;
+            text-align: center;
+            transition: all;
+            transition-duration: 0.5s;
+        }
+        .card1:hover,
+        .card2:hover,
+        .card3:hover
+        {
+            transform: scale(1.1);
+        }
+        .cards {
+            margin-top: -450px;
+            width: 100%;  
+            display: grid;
+            grid-gap:20px;
+            margin-left: auto;
+            margin-right: auto;
+            grid-template-columns: auto auto auto auto;
+            background-position: center;
+            background-image: linear-gradient(black , #150050);
+        }
+        
+        .btn3
+       {
+        background-color: black;
+        position: absolute;
+        padding: 20px 30px;
+        margin: 0 15px;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        overflow: hidden;
+        transition: 0.5s;
+        margin-top: 450px;
+        margin-left: 660px;
+       }
+       .btn3:hover
+       {
+           background: #6a0080;
+           color: rgb(255, 255, 255);
+           box-shadow: 0 0 50px #6a0080;
+           transition-delay: 0.5s;
+       }
+
+       .btn3:before
+       {
+           content: '';
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 10px;
+           height: 10px;
+           border-top: 2px solid  #6a0080;
+           border-left: 2px solid #6a0080;
+           transition: 0.5s;
+       }
+       .btn3:hover:before
+       {
+           width: 100%;
+           height: 100%;
+       }
+
+       .btn3:after
+       {
+           content: '';
+           position: absolute;
+           bottom: 0;
+           right: 0;
+           width: 10px;
+           height: 10px;
+           border-bottom: 2px solid #6a0080;
+           border-right: 2px solid #6a0080;
+           transition: 0.5s;
+       }
+       .btn3:hover:after
+       {
+           width: 100%;
+           height: 100%;
+       }
+       
+        .cards1
+        {
+            margin-top: 50px;
+            width: 110%;
+            margin-left: 45px;
+            display: flex;
+            justify-items: center ;
+        }
+       
+        .footer
+        {
+            width: 100%;
+            height: 200px;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
+        .footer ul li a
+        {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Outfit', sans-serif;
+            line-height: 40px;
+            transition: all;
+            transition-duration: 0.5s;
+        }
+        .footer ul li a:hover
+        {
+            font-size: 24px;
+            color: yellow;
+        }
+        .fr1
+        {
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+        }
+        .fr1 ul 
+        {
+            display: flex;
+            text-decoration: none;
+            margin-top: 30px;
+            text-decoration: none;
+            list-style-type: none;
+            margin-left: -30px;
+        }
+        .fr1 ul li
+        {
+            padding:12px;
+        }
+        .fr1 ul li img
+        {
+            transition: all;
+            transition-duration: 0.5s;
+        }
+        .fr1 ul li img:hover
+        {
+            transform: scale(1.3);
+        }
+        .fab 
+        {
+            color: azure;
+        }
+        .fab:hover
+        {
+            color: yellow;
+        }
+        .fas
+        {
+            color: azure;
+        }
+        .fas:hover
+        {
+            color: yellow;
+        }
+    </style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo.png" class="lo" alt="image" width="80px">
+        </div>
+
+        <nav class="navi">
+            <ul>
+                <li> <a href="#">Wireless</a></li>
+                <li> <a href="#">Headphone</a></li>
+                <li> <a href="#">Sound Bars</a></li>
+                <li> <a href="#">Speakers</a></li>
+                <li><a href="#"><i class="fab fa-searchengin"></i></a></li>
+                <li><a href="#"><i class="fas fa-user-circle"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+            </ul>
+        </nav>
+        
+    </header>
+        <div class="main">
+        
+            <div class="banner" >
+                <video autoplay muted loop width="100%" >
+                    <source src="images/vid.mp4" type="video/mp4">
+                </video>
+                <button class="btn">Buy now</button>
+                <h1 class="sale">Great sale is Live</h1>
+                <h1 class="headdd">Duo Headphons Offer <br>Buy one and Get one for Free now</h1>
+
+            </div>
+        </div>    
+           
+        <div class="second">
+                <button class="btn2">Buy now</button>
+        </div>
+       
+
+        <div>
+            <h1 class="trending">TRENDING NOW</h1>
+            </div>
+        
+            <div class="banr">
+
+            </div>
+
+  <div class="card wow animate__animated animate__pulse ">
+    
+        <div class="card1"> 
+            <img src="images/pic3.jpg" width="100%" height="400px" alt="sp">
+            <h1>Speakers</h1>
+        </div>
+    
+        <div class="card2"> 
+            <img src="images/pic2.jpg" width="100%" height="400px" alt="wi">
+            <h1>Wireless</h1>
+        </div>
+
+        <div class="card3"> 
+            <img src="images/pic4.jpg" width="100%" height="400px" alt="na">
+            <h1>New Arrival</h1>
+        </div>
+    </div>
+
+    <div class="cards ">
+    
+        <div class="cards1"> 
+            <img src="images/ep.png" width="100%" alt="sp">    
+            <button class="btn3">Buy now</button>
+        </div>
+    
+       
+    </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js">
+        </script>
+        <script>
+            new WOW().init();
+        </script>
+
+    <div class="footer">
+      <div>
+        <ul>
+            <li> <a href="#">Help center</a></li>
+            <li> <a href="#">Contact us</a></li>
+            <li> <a href="#">Warranty</a></li>
+            <li> <a href="#">Order status</a></li>
+        </ul>
+     </div>
+
+     <div>
+        <ul>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Blog</a></li>
+            <li> <a href="#">Compare</a></li>
+            <li> <a href="#">Carrers</a></li>
+        </ul>
+     </div>
+
+     <div class="fr1">
+        <h1>Follow us</h1>
+        <ul>
+                <li> <img src="images/facebook.png" alt="search" width="35px"> </li>
+                <li> <img src="images/instagram.png" alt="" width="35px"> </li>
+                <li> <img src="images/twitter.png" alt="" width="35px"></li>
+                <li> <img src="images/global.png" alt="" width="35px"></li>
+        </ul>
+     </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
